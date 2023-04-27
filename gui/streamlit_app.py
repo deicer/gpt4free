@@ -1,8 +1,8 @@
 import streamlit as st
 import phind
 
-phind.cf_clearance = ''
-phind.user_agent   = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
+phind.cf_clearance = 'ovUVV2HIyt2RPwoy122qMcRRZhZOtFFGEZA1pcl13ns-1682575351-0-160'
+phind.user_agent   = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaBrowser/23.3.4.508 (beta) Yowser/2.5 Safari/537.36'
 
 def phind_get_answer(question:str)->str:
     # set cf_clearance cookie
@@ -33,7 +33,7 @@ st.set_page_config(
 
 st.header('GPT4free GUI')
 
-question_text_area = st.text_area('🤖 Ask Any Question :', placeholder='Explain quantum computing in 50 words')
+question_text_area = st.text_area('🤖 Ask Any Question :', placeholder='Explain quantum computing in 100 words')
 if st.button('🧠 Think'):
     answer = phind_get_answer(question_text_area)
     st.caption("Answer :")
